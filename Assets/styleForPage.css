@@ -1,0 +1,86 @@
+p{
+    margin: 10px 0;
+}
+.sidenav {
+    height: 100%;
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(58, 72, 131);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #05fcef;
+    display: block;
+    border: unset;
+    border-bottom: 2px solid #5aa5d1;
+}
+
+.sidenav a:hover {
+    border: unset;
+    border-bottom: 2px solid #f70174;
+    color: #f54d4d;
+}
+
+.sidenav ul {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #05fcef;
+    display: block;
+    border: unset;
+    border-bottom: 2px solid #5aa5d1;
+}
+
+.sidenav ul:hover {
+    border: unset;
+    border-bottom: 2px solid #f70174;
+    color: #f54d4d;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#exitAndEnter-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.exitAndEnter a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #05fcef;
+    display: block;
+    margin: 10px;
+}
+
+.exitAndEnter a:hover {
+    border: unset;
+    border-bottom: 2px solid #f70174;
+    color: #f54d4d;
+}
+
+#loceshionButtonProfAndExit {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    flex-basis: content;
+  }
+

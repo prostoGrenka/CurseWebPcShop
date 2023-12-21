@@ -4,29 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПетроМагаз</title>
-    <link rel="stylesheet" href="../assets/styleForPage.css">
+    <title>Добавление товара</title>
+    <link rel="stylesheet" href="StyleForPageAddData.css">
 </head>
 <body>
-  <header>
-    <div class = "exitAndEnter" id = "loceshionButtonProfAndExit">
-      <a href= "">Выйти</a>
-      <a href= "#">Личный Кабинет</a> 
-    </div>
-  </header>
 
+<header>
+    <h1>Петровский магазинчик</h1>
+</header>
 
-    <div class="sidenav">
-      <img src ="../Assets/img/logo.png">
-        <a href= "../MainPage/mainPage.html">Главная</a>
-        <a href= "../PageCatalog/catalog.html">Категории</a>
-        <a href= "../aboutSite.html">о Нас</a>
-        <a href= "../addDataOnSite/addData.html" >Добавить позицию</a>
-        <a href= "../PageSupport/support.html">Поддержка</a>
-    </div>
+<nav>
+    <a href="../MainPage/mainPage.php">Главная страница</a>
+    <a href="../addDataOnSite/addData.html">Добавить запись</a>
+    <a href="../PageSupport/aboutSite.html">О нас</a>
+    <a href="../Account/account.html">Аккаунт</a>
+    <a href="../Authorization/PageLogin.php">Выйти</a>
+</nav>
 
-      <div class="main">
-        ...
-      </div>
+<section>
+    <h2>Добавление товара</h2>
+    <form action="AddData.php" method="post"  enctype="multipart/form-data">
+        <label for="name">Название товара:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="category">Категория:</label>
+        <input type="text" name="category" required><br>
+
+        <label for="price">Цена:</label>
+        <input type="number" name="price" required><br>
+
+        <label for="description">Описание:</label>
+        <textarea name="description" required></textarea><br>
+
+        <label for="image">Выберите изображение:</label>
+        <input type="file" name="image" id="image" accept="image/*" required>
+
+        <button type="submit">Загрузить</button>
+
+        <input type="submit" value="Добавить товар">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; Работу выполнил Ушаков Евгений Алексеевич  </p>
+</footer>
+
 </body>
 </html>

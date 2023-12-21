@@ -18,7 +18,7 @@ else
     } 
     else
     {
-        $sql = "INSERT INTO `User` (login, pass, email) VALUES ('$login', '$pass', '$email')";
+        $sql = "INSERT INTO `Users` (login, pass, email) VALUES ('$login', '$pass', '$email')";
         if($conn -> query($sql) === TRUE)
         {
             echo "Успешная регистрация";

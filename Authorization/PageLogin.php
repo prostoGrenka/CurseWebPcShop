@@ -8,8 +8,10 @@
 </head>
 <body>
     <form action = "login.php" method = "post">
+
         <input type="text" placeholder = "Введите свой логин" name = "login">
         <input type="password" placeholder = "Введите пароль" name = "pass">
+
         <button type = "sudmit">Войти</button>
         <p>У меня еще нет аккаунта - <a href="PageRegister.php"> Зарегистрироваться</a></p>
     </form>
